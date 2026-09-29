@@ -42,7 +42,7 @@ class MeuCrachaApp extends StatelessWidget {
                 colors: [
                   // TODO: Primeira cor do gradiente,
                   // TODO: Segunda cor do gradiente,
-                ],Dart
+                ],
                 Colors.indigo,
                 Colors.blueAccent,                begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
@@ -62,14 +62,14 @@ class MeuCrachaApp extends StatelessWidget {
                 ),
                 
                 const SizedBox(height: 15),
-                backgroundImage: NetworkImage('https://github.com/identicons/user.png'),                const Text(
-                  'Pietro Pereira',
+                backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvHCYJ4anE24Po4evAvoXSrjtTrxUIDm69UmrSSSDpZQ&s=10'),                const Text(
+                  'Pietro Perera',
                   style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
-                ),
+                )
                 
                 // ===============================================================
                 // DESAFIO 2 (3 PONTOS) - ESTILIZAÇÃO E BIOGRAFIA
@@ -78,6 +78,7 @@ class MeuCrachaApp extends StatelessWidget {
                 const Text(
                   'Desenvolvedor Mobile Flutter / SENAI',
                   style: TextStyle(
+                  fontStyle: FontStyle.italic,
                     color: Colors.white70,
                     // TODO: Inserir fontStyle: FontStyle.italic
                   ),
