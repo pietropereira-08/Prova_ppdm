@@ -42,9 +42,11 @@ class MeuCrachaApp extends StatelessWidget {
                 colors: [
                   // TODO: Primeira cor do gradiente,
                   // TODO: Segunda cor do gradiente,
-                ],
+                
                 Colors.indigo,
-                Colors.blueAccent,                begin: Alignment.topLeft,
+                Colors.blueAccent,
+		],
+                begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
             ),
@@ -59,17 +61,20 @@ class MeuCrachaApp extends StatelessWidget {
                 const CircleAvatar(
                   radius: 50,
                   // TODO: Adicionar propriedade backgroundImage com NetworkImage
-                ),
-                
-                const SizedBox(height: 15),
-                backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvHCYJ4anE24Po4evAvoXSrjtTrxUIDm69UmrSSSDpZQ&s=10'),                const Text(
+                backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvHCYJ4anE24Po4evAvoXSrjtTrxUIDm69UmrSSSDpZQ&s=10'),               
+		),
+	
+
+		const SizedBox(height: 15),
+
+		 const Text(
                   'Pietro Perera',
                   style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
-                )
+                ),
                 
                 // ===============================================================
                 // DESAFIO 2 (3 PONTOS) - ESTILIZAÇÃO E BIOGRAFIA
@@ -78,6 +83,7 @@ class MeuCrachaApp extends StatelessWidget {
                 const Text(
                   'Desenvolvedor Mobile Flutter / SENAI',
                   style: TextStyle(
+			fontSize: 14,
                   fontStyle: FontStyle.italic,
                     color: Colors.white70,
                     // TODO: Inserir fontStyle: FontStyle.italic
@@ -96,8 +102,10 @@ class MeuCrachaApp extends StatelessWidget {
                     Chip(label: Text('Dart')),
                     SizedBox(width: 5),
                     // TODO: Adicionar o Chip 'Flutter',
-                    SizedBox(width: 5),
+			Chip(label: Text('Flutter')),
+			SizedBox(width: 5),
                     // TODO: Adicionar o Chip 'Git',
+			Chip(label: Text('Git')),
                   ],
                 ),
                 
